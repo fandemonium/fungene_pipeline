@@ -41,7 +41,7 @@ See the complete list of commands in `fgp_wrapper.py`.
 
 * Download the RDPTools and Fungene Pipeline scripts into your local directory.
 * Make the directory `output_dir`. This directory should be empty before you start the script.
-* Make an options file. You can use one of the example files as a template; just make sure to adjust the paths accordingly. The file should be in the following format
+* Make an options file. You can use one of the example files as a template; just make sure to adjust the paths (full path required) accordingly. The file should be in the following format
 
     ```
     gene_name
@@ -60,6 +60,7 @@ See the complete list of commands in `fgp_wrapper.py`.
 
 If you are using multiple input files, you can separate them by commas or use `*.ext` to use all files with the same extension. All of the results will be in the `output_dir` folder.
 
+Fungene pipeline comments do not override result files. If you want to use the same conf.ini, make sure to rename or remove your pipeline-job directory when rerunning the same pipeline commands. 
 #### Pipeline with command and options file
 
 * Here is an example command to run Initial Process, Chimera Check, Alignment and Clustering using `fgp_wrapper.py`. 
