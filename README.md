@@ -17,7 +17,7 @@ allowing researchers to choose the appropriate subset based on their needs.
 	
 ### Configuration
 
-The path to the programs and resources are specfied in file `config.ini`. Modify the example `config_skel.ini` and rename it as `config.ini`.
+The full path to the programs and resources are specfied in file `config.ini`. Modify the example `config_skel.ini` and rename it as `config.ini`.
 
 <a name="Usage"></a>
 ### Usage
@@ -53,7 +53,7 @@ See the complete list of commands in `fgp_wrapper.py`.
     /path/to/output_dir/mail_file
     ```
 
-* Make a command file. There are several command files in the `examplefiles` directory to use as templates. Once you are familiar with the pipeline workflow, you can start making your own command files.
+* Make a command file. There are several command files in the `examplefiles` directory to use as templates. Once you are familiar with the pipeline workflow, you can start making your own command files. Make sure full path is supplied if it's needed.   
 * Run the Fungene Pipeline using the following format.
 
     ```python /path/to/fungene_pipeline/fgp_wrapper.py options_file.txt command_file.txt input_file```
