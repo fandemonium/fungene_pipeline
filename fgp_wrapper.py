@@ -31,9 +31,9 @@ def check_seq_counts_file(seq_file):
 			total_seqs += 1
 	return total_seqs
 
-def send_mail(email_address, subject, mail_file):
-	cmd = ["cafe", mail_wrapper_class, "--to_email", email_address, "--subject_name", subject, "--message_file", mail_file]
-	subprocess.call(cmd)
+#def send_mail(email_address, subject, mail_file):
+#	cmd = ["cafe", mail_wrapper_class, "--to_email", email_address, "--subject_name", subject, "--message_file", mail_file]
+#	subprocess.call(cmd)
 
 def main(options_file, command_file, infiles):
 	seq_files = []
@@ -343,7 +343,7 @@ def main(options_file, command_file, infiles):
 		error_mail.write("RDP Staff\n")	
 		error_mail.close()
 		
-		send_mail(user_email, "FunGene Pipeline job failed", error_mail_file)
+	#	send_mail(user_email, "FunGene Pipeline job failed", error_mail_file)
 		
 		raise
 	
@@ -352,7 +352,7 @@ def main(options_file, command_file, infiles):
 	status_stream.write("Pipeline completed successfully\n")
 	status_stream.close()
 
-	send_mail(user_email, "FunGene Pipeline job complete", mail_file)
+#	send_mail(user_email, "FunGene Pipeline job complete", mail_file)
 	
 if __name__ == "__main__":
 	if len(sys.argv) > 3:
