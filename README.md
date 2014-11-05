@@ -60,7 +60,7 @@ See the complete list of commands in `fgp_wrapper.py`.
 
 If you are using multiple input files, you can separate them by commas or use `*.ext` to use all files with the same extension. All of the results will be in the `output_dir` folder.
 
-Fungene pipeline comments do not override result files. If you want to use the same conf.ini, make sure to rename or remove your pipeline-job directory when rerunning the same pipeline commands. 
+Fungene pipeline comments do not override result files. If you want to use the same option files, make sure to rename or remove your pipeline-job directory when rerunning the same pipeline commands. 
 #### Pipeline with command and options file
 
 * Here is an example command to run Initial Process, Chimera Check, Alignment and Clustering using `fgp_wrapper.py`. 
